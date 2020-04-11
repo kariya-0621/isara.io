@@ -1,91 +1,1084 @@
+
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Progate</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>isara模写レスポンシブ</title>
+  <link rel="stylesheet" href="isara2.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <link href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="isara2.1.css">
 </head>
 <body>
+
   <header>
-    <div class="container">
-      <div class="header-left">
-        <img class="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
-      </div>
-      <span class="fa fa-bars menu-icon"></span>
-      <div class="header-right">
-        <a href="#">レッスン</a>
-        <a href="#">新規登録</a>
-        <a href="#" class="login">ログイン</a>
-      </div>
-    </div>
+    <!--titleが全体を包んでいる大枠-->
+       <div class="title">
+           <div class="logo"><img src="https://isara.life/wp-content/themes/isara_v2/img/isaralogo.png" alt="iSara"></div>
+           <div class="subtitle txtxs">
+              <p>バンコクのノマドエンジニア育成講座</p>
+           </div>
+           <div class="header-right">
+             　　   <div class="contactpc">
+                       <a href="#form-header">
+                        <p class="txtxs">お問い合わせ / 資料請求はこちら</p>
+                       </a>
+                    </div>
+
+                    <div class="contactsp">
+                        <img src="https://isara.life/wp-content/themes/isara_v2/img/form.png">
+                        <a href="#form-header">資料請求</a>
+                    </div>
+           </div>
+       </div>
   </header>
-  <div class="top-wrapper">
-    <div class="container">
-      <h1>LEARN TO CODE.<br>LEARN TO BE CREATIVE.</h1>
-      <p>Progateはオンラインプログラミング学習サービスです。<br>初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。</p>
-      <div class="btn-wrapper">
-        <a href="#" class="btn signup">新規登録はこちら</a>
-        <p>or</p>
-        <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</a>
-        <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</a>
-      </div>
-    </div>
+
+  <div class="isara-top">
+         <div class="isara-cover-image">
+             <div class="isara-top-text">
+                <h1>プログラミングで<br>人生の安定を手にいれよう</h1>
+                <img src="https://isara.life/wp-content/themes/isara_v2/img/isaralogo.png" alt="いサラ">
+                <h2>
+                バンコクのノマドエンジニア育成講座<br>iSara[イサラ]
+                </h2>
+             </div>       
+         </div>
   </div>
-  <div class="lesson-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>Learn Where to Get Started!</h2>
+  
+  <div class="isara-second">
+      <div class="isara-second-contants">
+         <h3 class="mazuha">まずは２０日間で、<br>月１０万円稼げるスキルを手にいれよう。</h3>
+          <div class="white-text">
+            <h3>※受講料金は実質０円です。詳しくは資料請求をどうぞ。</h3>
+          </div>
+          <div class="otoiawase">
+            <h1>お問い合わせ / 資料請求はこちら</h1>
+          </div>
+          <div class="otoiawasebi">
+            <h2>第６期生：2019年11月25日 ~ 2019年12月14日＊締め切りました</h2>
+            <h2>第７期生：2020年2月17日 ~ 2019年3月7日＊締め切りました</h2>
+            <h2>第8期生：2020年4月〜5月ごろを予定＊資料請求受付中です</h2>
+          </div>
+          <div class="zikoshoukai">
+              <div class="twitter logo2"><i class="fab fa-twitter  my-color"></i>
+                ツイート
+              </div>
+              <div class="iine logo2"><i class="far fa-thumbs-up"></i>
+                いいね
+              </div>
+              <div class="shea logo2">
+                シェア
+              </div>            
+          </div>
       </div>
-      <div class="lessons">
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/html.png">
-            <p>HTML & CSS</p>
-          </div>
-          <p class="text-contents">ウェブページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-            <p>jQuery</p>
-          </div>
-          <p class="text-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/ruby.png">
-            <p>Ruby</p>
-          </div>
-          <p class="text-contents">オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/php.png">
-            <p>PHP</p>
-          </div>
-          <p class="text-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
-        </div>
-      </div>
-      <div class="clear"></div>
-    </div>
   </div>
-  <div class="message-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
-        <h3>Let's learn to code, learn to be creative!</h3>
-      </div>
-      <span class="btn message">さっそく開発する</span>
-    </div>
+
+  <div class="isara-three">
+         <div class="isara-cover-image-three">
+             <div class="isara-three-text">
+                <!--ここにbefore入ります-->
+                <div class="isara-three-text1">
+                   <h1>エンジニアとして本当の自由を手に入れるためには？
+                   </h1>
+                </div>
+                <!--ここにafter入ります-->
+                <div class="isara-three-text2">
+                   <h2>エンジニア需要の高まりに伴い、プログラミングスクールが増えています。
+                   <br>
+                    しかしそこでの学習の先は、提携して決められた就職先に就職すること。
+                   </h2>
+                   <h2>これで本当にいいのですか？<br>日本人エンジニアはアメリカと較べて給料が格段に低い。<br>
+                   その理由がここにあり、 エンジニアは自分の給料をコントロールすべきなのです。
+                   <h2>スキルを身につけたエンジニアは、人生をコントロールすることでより自由に。<br>そこで必要なのが<span>「稼ぐ力」</span>です。</h2>             
+                </div> 
+
+             </div>       
+         </div>
   </div>
-  <footer>
-    <div class="container">
-      <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
-      <p>Learn to Code, Learn to be Creative.</p>
+
+   <div class="isara-fore">
+         <div class="isara-cover-image-fore">
+             <div class="about">
+                <p class="circle1">ABOUT</p>
+             </div>    
+             <div class="isara-fore-text">
+                <!--ここにbefore入ります-->
+                <div class="isara-fore-text1">
+                   <h1>ノマドエンジニア育成講座<br>
+                    iSara[イサラ]とは
+                   </h1>
+                </div>
+                <!--ここにafter入ります-->
+                <h2 class="kasegu">
+                   「 稼ぐこと 」にフォーカスしたWebエンジニア育成講座です。
+                </h2>
+                <div class="isara-fore-text2">
+                   <h2 class="kasegeru">稼げるエンジニアに必要な５つのスキルとは？</h2> 
+                    <div class="logos">
+
+                        <div class="logo4">
+                           <img src="https://isara.life/wp-content/themes/isara_v2/img/skill.jpg" alt="1">
+                           <p>基礎的な<br> プログラミングスキル</p>
+                        </div>
+
+                        <div class="logo4">
+                           <img src="https://isara.life/wp-content/themes/isara_v2/img/sales.jpg" alt="2">
+                           <p>案件獲得に必要な<br>営業力</p>
+                        </div>
+
+                        <div class="logo4">
+                           <img src="https://isara.life/wp-content/themes/isara_v2/img/document.jpg" alt="3">
+                           <p>見積もり作成から<br>納品までの知識
+                           </p>
+                        </div>
+
+                        <div class="logo4">
+                           <img src="https://isara.life/wp-content/themes/isara_v2/img/plusone.jpg" alt="4">
+                           <p>自分の付加価値を<br> 高めるスキルスキル</p>
+                        </div>
+
+                        <div class="logo4">
+                           <img src="https://isara.life/wp-content/themes/isara_v2/img/connection.jpg" alt="5">
+                           <p>フリーランス同士の<br>横のつながり</p>
+                        </div>
+                </div> 
+             </div>       
+         </div>
+  </div>
+
+
+  
+  <div class="isara-five">
+     <div class="isara-five-contants">
+        <div class="isara-five-text1">
+           <h1>iSaraで「基本的なプログラミングスキル」は教えません</h1>
+           <h2>基礎的なプログラミングスキルは無料で学べる時代。</h2>
+           <h2>iSaraでは、基礎知識学習は<span>事前課題</span>と<span>チャットサポート</span>のみ。</h2>
+        </div>
+        <div class="isara-five-box">
+            <div class="box1">
+              <div class="box-1-text">
+                 <p>STEP.1</p>
+              </div>
+              <div class="bannkoku">
+                <p>【バンコク渡航前１ヶ月】</p>
+                <p>事前課題で基礎知識を学ぶ</p>
+              </div>
+            </div>
+
+            <div class="box2">
+              <div class="box-1-text">
+                 <p>STEP.2</p>
+              </div>
+              <div class="bannkoku">
+                <p>【バンコク到着後】</p>
+                <p>実践的に稼ぐことに特化した学習</p>
+              </div>
+            </div>
+
+            <div class="box3">
+               <div class="box-1-text">
+                  <p>STEP.3</p>
+               </div>
+               <div class="bannkoku">
+                  <p>【バンコク帰国後】</p>
+                  <p>講座実施後の案件獲得サポート</p>
+                </div>  
+            </div>
+
+        </div>
     </div>
-  </footer>
+</div>
+
+<div class="ao">
+   <h2>
+     スキルアップしてもフリーランスエンジニアとして食べていくことは難しい。
+   </h2>
+   <h2>
+     フリーランスには<span>プログラミングスキル以外</span>が大切。
+   </h2>
+</div>
+
+<!--６枚目に移ります-->
+<div class="isara-six">
+      <div class="isara-six-contants">
+          <div class="isara-six-text">
+              <h1>iSara[イサラ]で学べること</h1>
+          </div>
+          <div class="isara-six-text2">
+              <h3>iSaraの学習では、エンジニアとして「稼ぐ」ために必要な能力を身につけます。</h3>
+          </div>
+          <div class="row">
+              <div class="">
+                 <img src="https://isara.life/wp-content/themes/isara_v2/img/salesskill.jpg" alt="1">
+              </div>
+              <div class="">
+                 <img src="https://isara.life/wp-content/themes/isara_v2/img/knowledge.jpg" alt="2">
+              </div>
+              <div class="">
+                 <img src="https://isara.life/wp-content/themes/isara_v2/img/skillup.jpg" alt="3">
+              </div>
+              <div class="">
+                 <img src="https://isara.life/wp-content/themes/isara_v2/img/freelanceconnection.jpg" alt="4">
+              </div>           
+          </div>
+          <h3 class="korera">
+             これらを教えるのがiSaraです。
+          </h3>
+      </div>
+  </div>
+
+ <div class="isara-seven">
+         <div class="isara-cover-image-seven">   
+                <!--ここにbefore入ります-->
+                <div class="isara-seven-text1">
+                   <h1>他のプログラミングスクールとここが違う！
+                   </h1>
+                   <h1 class="meritto">iSara[イサラ]の３つのメリット</h1>
+                </div>
+                <!--ここにafter入ります-->
+                <div class="meritto-picutures">
+                   <div class="box-seven">
+                      <img src="https://isara.life/wp-content/themes/isara_v2/img/learnfromfreelancer.jpg" alt="1">
+                      <h2>現役フリーランスから学べる</h2>
+                      <p>他のプログラミングスクールとは違い、実際にフリーランスとして活動しているエンジニアが直接講師を勤めます。</p>
+                   </div>
+                   <div class="box-seven">
+                      <img src="https://isara.life/wp-content/themes/isara_v2/img/learnfromprojects.jpg" alt="2">
+                      <h2>実践を通じて学べる</h2>
+                      <p>フリーランスにとって最短の学習方法は「実践」。iSaraでは実案件を通して学びます。現役フリーランサーの案件サポートに加え、クラウドソーシングを活用。初心者の自分じゃ無理と思うかもですが、現役フリーランスがサポートしますので大丈夫。</p>
+                   </div>
+
+                   <div class="box-seven">
+                      <img src="https://isara.life/wp-content/themes/isara_v2/img/actuallyfree.jpg" alt="3">
+                      <h2>授業料が実質０円</h2>
+                      <p>講座費用258,000円以上の金額が稼げるまで「永久サポート延長」があります。</p>
+                   </div>
+                </div>
+                <div class="isara-seven-text2">
+                    <div class="isara-seven-text2-container">
+
+                        <div class="sarani">
+                        　  <h1>さらに！帰国後もサポート付き
+                        　  </h1>
+                        </div>
+
+                        <div class="rimo-to">
+                          <h2>リモートワーカーのチームを作ることで受注率、受注単価が大幅に向上します。</h2>     
+                        </div>
+
+                        <div class="isaraha">
+                          <h4>iSaraは講座が終わって終了ではありません。<br>参加メンバーのチャットグループを作り、帰国後も継続的に案件参加できるようになります。<br>また、チームで働くことで継続的に稼ぎやすい仕組みづくりも構築しております。</h4>
+                        </div>
+                    </div>                 
+                </div>
+                <div class="zizenn">
+                    <p>事前課題ができない人はお断りしております。iSaraでは、無料で学べるプログラミング基礎知識は教えません。事前課題一覧はメールで送りつつ、<br>チャットサポートのみ。従って、本気で取り組まないと結果は出ません。</p>                  
+                </div>       
+         </div>
+  </div>
+
+<div class="isara-eight">
+         <div class="isara-cover-image-eight">
+             <div class="isara-eight-text1">
+                <h1>創業メンバー</h1>
+                <p>実際にフリーランスとして活躍しているエンジニアが立ち上げました
+                </p>
+             </div>
+
+             <div class="eight-box">
+                   <div class="eight box8-1">
+                       <div class="eight-text1">
+                          <img src="https://isara.life/wp-content/themes/isara_v2/img/keisuke_someya.jpg" alt="1">         
+                          <p>フリーランス講師</p>
+                          <p>染谷 佳佑</p>
+                          <p>ISARA (THAILAND) CO.,LTD.の代表です。学生起業の後にリクルートへ就職、その後独立し、海外移住しました。今はフリーランスとしてリモートワークで日本円を稼ぎ、外国通貨に変えて使い、海外を旅してます。営業、ブログPVアップ(最高月間150万PV)、ビジネス構築が専門です。</p>
+                       </div>
+                   </div>
+
+                   <div class="eight box8-2">
+                       <div class="eight-text2">  
+                           <img src="https://isara.life/wp-content/uploads/2018/10/yuki.png" alt="2">     
+                          <p>フリーランス講師</p>
+                          <p>成田　雄輝</p>
+                          <p>バンコクのシェアハウスのオーナーをやりながら一年の大半をタイで過ごしています。 大学時代から今に至るまでネットだけで生計を立てているので、自由歴だけは講師陣の中で最長です！ 母親がタイ人という事もありタイには精通してますので、こちらでの生活のサポートはお任せください！</p>
+                       </div>
+                   </div> 
+             </div>   
+    <!-- これはisara公式ホームページを参考にした-->
+             <div class="eight-box2">
+                   <div class="eight box8-3">
+                       <div class="eight-text3">
+                          <img src="https://isara.life/wp-content/themes/isara_v2/img/shohey.png" alt="3">         
+                          <p>フリーランス講師</p>
+                          <p>大滝　昇平</p>
+                          <p>月の半分は東京の会社にリモートで勤めつつ、フリーでも活動しているエンジニアです。Laravel・WordPressでのWeb制作がコアスキル。立ち上げメンバーとしてカリキュラム原案制作に参画し、現在は外部アドバイザーをしています！</p>
+                       </div>
+                   </div>
+
+                   <div class="eight box8-4">
+                       <div class="eight-text4">  
+                           <img src="https://isara.life/wp-content/themes/isara_v2/img/manabu.png" alt="4">     
+                          <p>フリーランス講師</p>
+                          <p>坂内　学</p>
+                          <p>アドバイザーとして参画しました。新卒で海外就職して１１ヶ月後に退職。今は日本にいたり海外にいたりでゆるくフリーランスをしています。<br>お仕事はWebマーケティングとプログラミングが専門領域です。</p>
+                       </div>
+                   </div> 
+             </div> 
+      </div>         
+  </div>
+
+<div class="isara-nine">
+         <div class="isara-nine-container">
+               <div class="isara-nine-maru">
+                    <p class="QA">Q&A</p>               
+               </div> 
+                <!--ここにbefore入ります-->
+                <div class="isara-nine-text1">
+                   <h1>ノマドエンジニアとして自由に稼ぐことは<br>
+                    「 本当に 」可能なのか？
+                   </h1>
+                </div>
+                <!--ここにafter入ります-->     
+         </div>
+  </div>
+
+<!--10枚目のスライドに入ります、がちで考えてやる-->
+  <div class="ten-isara">
+      <div class="ten-isara-container">
+          <div class="ten-isara-text1">
+             <h1>実現可能です</h1>
+             <h4>その証拠に第三者の声を聞いてみました。</h4>
+             <p class="mesaage">＊実際にフリーランスエンジニアを採用する企業様から、メッセージをいただきました。</p>         
+          </div>
+
+          <div class="ten-isara-boxs">
+             <div class="ten-isara-box">
+                <div class="ten-isara-box-img">
+                   <img src="https://isara.life/wp-content/themes/isara_v2/img/take.jpg" alt="1">     
+                </div>
+                <div class="ten-isara-box-text">
+                   <p>リモートワークという言葉がありますが、弊社では何も気にしません。エンジニアに求めるのは、快適なコミュニケーションと信頼と成果物のみ。</p>
+                   <p class="IT">Kredo IT Abroad . Inc 代表取締役 横田 猛夫</p>      
+                </div>     
+             </div>
+             <div class="ten-isara-box">
+                <div class="ten-isara-box-img">
+                   <img src="https://isara.life/wp-content/themes/isara_v2/img/minami_sato.jpg" alt="2">     
+                </div>
+                <div class="ten-isara-box-text">
+                   <p>社内でスキルのある人材を採用するのは難しい。外部パートナーとして継続的に依頼できるフリーランスには助かっています。</p>
+                   <p class="IT">SAPEUR . Inc 代表取締役 佐藤 陽</p>      
+                </div>     
+             </div>
+             <div class="ten-isara-box">
+                <div class="ten-isara-box-img">
+                   <img src="https://isara.life/wp-content/themes/isara_v2/img/asada.jpg" alt="3">     
+                </div>
+                <div class="ten-isara-box-text">
+                   <p>プログラマーが足りていないときに外部リソースとして、フリーランスに発注しています。今はどこの会社でもエンジニアが不足していますね。</p>
+                   <p class="IT">株式会社BeautifulWorks 代表取締役 淺田 百合</p>      
+                </div>     
+             </div>
+
+          </div>
+      </div>    
+  </div>
+ 
+
+ <div class="eleven-isara">
+    <div class="eleven-isara-container">
+         <div class="eleven-isara-text1">
+             <h1>iSara[イサラ]で学べる内容</h1>
+             <h3>渡航前の事前課題と渡航中に学べることの一覧です。</h3>
+          </div>
+          <div class="eleven-isara-boxs">
+
+             <div class="eleven-isara-box">
+                <div class="tokoumae">
+                   <h2>渡航前の事前学習</h2>
+                </div>
+                <div class="eleven-isara-text2">
+                  <p>０から始めるプログラミング事前学習講座</p>
+                  <p>参加者グループコミュニティ</p>
+                  <p>チャットサポート</p>
+                  <p>事前スカイプコンサル</p>
+                  <p>環境構築の事前学習</p>
+                  <p>jQueryの事前学習講座</p>
+                  <p>Bootstrapの事前講座</p>
+                  <p>PHP / Mysqlの事前学習講座</p>
+                  <p>稼ぐためのHTML/CSS講座</p>
+                  <p>WordPressの事前学習講座</p>
+                </div>
+             </div>
+
+             <div class="eleven-isara-box2">
+                <div class="tokoumae">
+                   <h2>バンコク渡航中</h2>
+                </div>
+                <div class="eleven-isara-text3">
+                  <p>フリーランス独立術講座</p>
+                  <p>実際の実務案件をこなす</p>
+                  <p>ノマドフリーランス体験</p>
+                  <p>バンコク生活体験</p>
+                  <p>クラウドソーシング活用講座</p>
+                  <p>フリーランスのための営業講座</p>
+                </div>
+             </div>
+     </div>
+ </div>
+
+<div class="isara-twelve">
+  　<div class="isara-twelve-text">
+       <p>講座費用258,000円以上の金額が稼げるまで「永久サポート延長」します。</p>
+       <p>つまりリスク０で参加できます。</p>
+   </div>
+</div>
+
+ <div class="thirteen-isara">
+    <div class="thirteen-isara-container">
+         <div class="thirteen-isara-text">
+          　　<h1>受講の流れ</h1>
+              <img src="https://isara.life/wp-content/themes/isara_v2/img/flow.jpg" alt="1" class="maruenn">
+          </div>
+          <div class="pc-boxs">
+
+              <div class="pc-box">
+                 <div class="pc-box-left">
+                    <img src="https://isara.life/wp-content/themes/isara_v2/img/skypeconsulting.png"
+                     alt="1">
+                    <h3>Skypeで<br>事前コンサル</h3>
+                  </div>
+                 <div class="pc-box-right">
+                    <div>
+                        <h3>
+                          現在のスキルの状況、パソコンの環境説明、渡航での注意点を話します。
+                        </h3>
+                        <h3>
+                          簡単なテストあり
+                        </h3>
+                        <p>
+                          Saraでは受講料を稼げることを保障しています。従って、事前コンサル時点で簡単なテストを実施し、場合によってはお断りをしております。（テストの内容はPCの基礎知識に関するテストですので、普段からパソコンを利用する方でしたら問題ありません。テストはもちろん無料ですので、まずはお問い合わせください。）
+                        </p>
+                    </div>
+                 </div>
+              </div>
+
+              <div class="pc-box">
+                 <div class="pc-box-left">
+                    <img src="https://isara.life/wp-content/themes/isara_v2/img/preworks.png"
+                     alt="1">
+                    <h3>事前課題の提出</h3>          
+                 </div>
+                 <div class="pc-box-right">
+                    <div>
+                        <h3>
+                          現在のスキルの状況、パソコンの環境説明、渡航での注意点を話します。
+                        </h3>
+                        <h3>
+                          簡単なテストあり
+                        </h3>
+                        <p>
+                          Saraでは受講料を稼げることを保障しています。従って、事前コンサル時点で簡単なテストを実施し、場合によってはお断りをしております。（テストの内容はPCの基礎知識に関するテストですので、普段からパソコンを利用する方でしたら問題ありません。テストはもちろん無料ですので、まずはお問い合わせください。）
+                        </p>
+                    </div>
+                 </div>
+              </div>
+
+              <div class="pc-box">
+                 <div class="pc-box-left">
+                    <img src="https://isara.life/wp-content/themes/isara_v2/img/flight.png"
+                     alt="1">
+                    <h3>現地に渡航</h3>          
+                 </div>
+                 <div class="pc-box-right">
+                    <div>
+                        <h3>
+                          現在のスキルの状況、パソコンの環境説明、渡航での注意点を話します。
+                        </h3>
+                        <h3>
+                          簡単なテストあり
+                        </h3>
+                        <p>
+                          Saraでは受講料を稼げることを保障しています。従って、事前コンサル時点で簡単なテストを実施し、場合によってはお断りをしております。（テストの内容はPCの基礎知識に関するテストですので、普段からパソコンを利用する方でしたら問題ありません。テストはもちろん無料ですので、まずはお問い合わせください。）
+                        </p>
+                    </div>
+                 </div>
+              </div>
+
+              <div class="pc-box">
+                 <div class="pc-box-left">
+                    <img src="https://isara.life/wp-content/themes/isara_v2/img/personwithlight.png"
+                     alt="1">
+                    <h3>実案件を<br>通して学ぶ</h3>          
+                 </div>
+                 <div class="pc-box-right">
+                    <div>
+                        <h3>
+                          現在のスキルの状況、パソコンの環境説明、渡航での注意点を話します。
+                        </h3>
+                        <h3>
+                          簡単なテストあり
+                        </h3>
+                        <p>
+                          Saraでは受講料を稼げることを保障しています。従って、事前コンサル時点で簡単なテストを実施し、場合によってはお断りをしております。（テストの内容はPCの基礎知識に関するテストですので、普段からパソコンを利用する方でしたら問題ありません。テストはもちろん無料ですので、まずはお問い合わせください。）
+                        </p>
+                    </div>
+                 </div>
+              </div>
+
+              <div class="pc-box">
+                 <div class="pc-box-left">
+                    <img src="https://isara.life/wp-content/themes/isara_v2/img/jobsupport.png"
+                     alt="1">
+                    <h3>帰国後の仕事獲得<br>サポート付き</h3>          
+                 </div>
+                 <div class="pc-box-right">
+                    <div>
+                        <h3>
+                          現在のスキルの状況、パソコンの環境説明、渡航での注意点を話します。
+                        </h3>
+                        <h3>
+                          簡単なテストあり
+                        </h3>
+                        <p>
+                          Saraでは受講料を稼げることを保障しています。従って、事前コンサル時点で簡単なテストを実施し、場合によってはお断りをしております。（テストの内容はPCの基礎知識に関するテストですので、普段からパソコンを利用する方でしたら問題ありません。テストはもちろん無料ですので、まずはお問い合わせください。）
+                        </p>
+                    </div>
+                 </div>
+              </div>
+      　</div>
+
+      <!--スマホ-->
+          <div class="sp-boxs">
+
+             <div class="sp-box">
+                <div class="sp-box-text1">
+                   <div class="sp-box-text1-img">
+                     <img src="https://isara.life/wp-content/themes/isara_v2/img/skypeconsulting.png"
+                     alt="1">
+                    </div>
+                    <div class="sp-box-text1-p">
+                      <p>Skypeで事前コンサル</p>
+                    </div>
+                    <div class="sp-box-text1-span">
+                      <span>+</span>
+                    </div>
+                </div>
+                <div class="sp-box-text2">
+                   <p>
+                     現在のスキルの状況、パソコンの環境説明、渡航での注意点を話します。
+                   </p>
+                   <p>
+                     簡単なテストあり
+                   </p>
+                   <p>
+                     Saraでは受講料を稼げることを保障しています。従って、事前コンサル時点で簡単なテストを実施し、場合によってはお断りをしております。（テストの内容はPCの基礎知識に関するテストですので、普段からパソコンを利用する方でしたら問題ありません。テストはもちろん無料ですので、まずはお問い合わせください。）
+                    </p>
+                </div>
+             </div>
+
+               <div class="sp-box">
+                <div class="sp-box-text1">
+                   <div class="sp-box-text1-img">
+                     <img src="https://isara.life/wp-content/themes/isara_v2/img/preworks.png"
+                     alt="1">
+                    </div>
+                    <div class="sp-box-text1-p">
+                      <p>事前課題の提出</p>
+                    </div>
+                    <div class="sp-box-text1-span">
+                      <span>+</span>
+                    </div>
+                </div>
+                <div class="sp-box-text2">
+                   <p>
+                     出発前の１ヶ月前に事前課題を送ります。
+                   </p>
+                   <p>
+                     ０から始めるプログラミング事前学習講座、環境構築の事前学習、jQueryの事前学習講座、Bootstrapの事前学習講座、PHP / Mysqlの事前講座
+                   </p>
+                   <p>
+                     課題は多いですが、ここで努力が必須です。プログラミングは高付加価値なスキルです。そのためには学習が必須です。回数無制限のチャットサポート付きですので、最初は努力してください。また、参加者グループコミュニティも作成するので、横の繋がりでモチベーションを高めることもできます。
+                    </p>
+                </div>
+             </div>
+
+               <div class="sp-box">
+                <div class="sp-box-text1">
+                   <div class="sp-box-text1-img">
+                     <img src="https://isara.life/wp-content/themes/isara_v2/img/flight.png"
+                     alt="1">
+                    </div>
+                    <div class="sp-box-text1-p">
+                      <p>現地に渡航</p>
+                    </div>
+                    <div class="sp-box-text1-span">
+                      <span>+</span>
+                    </div>
+                </div>
+                <div class="sp-box-text2">
+                   <p>
+                     到着日には空港でお出迎えし、初日のオリエンテーションを行います。滞在先は空港からすぐの出来たてシェアハウス。美味しいタイ料理などもご紹介します。
+                   </p>
+                   <p>
+                     iSaraは『ノマド』フリーランス養成講座です。楽しいノマド体験ができるよう、バンコクでの生活はこちらでサポートします。
+                   </p>
+                </div>
+             </div>
+
+               <div class="sp-box">
+                <div class="sp-box-text1">
+                   <div class="sp-box-text1-img4">
+                       <img src="https://isara.life/wp-content/themes/isara_v2/img/personwithlight.png" alt="4">
+                    </div>
+                    <div class="sp-box-text1-p">
+                      <p>実案件を通して学ぶ</p>
+                    </div>
+                    <div class="sp-box-text1-span">
+                      <span>+</span>
+                    </div>
+                </div>
+                <div class="sp-box-text2">
+                   <p>
+                     現役フリーランスが抱える案件に加え、クラウドソーシングを使って実案件をこなします。
+                   </p>
+                   <p>
+                     案件獲得のためのメールの書き方や見積りの仕方など、他のプログラミングスクールでは教えてくれない実務スキルを学ぶことができます。
+                   </p>
+                   <p>
+                     ＊現役フリーランスがサポートします。
+                    </p>
+                </div>
+             </div>
+
+               <div class="sp-box">
+                <div class="sp-box-text1">
+                   <div class="sp-box-text1-img">
+                     <img src="https://isara.life/wp-content/themes/isara_v2/img/jobsupport.png"
+                     alt="5">
+                    </div>
+                    <div class="sp-box-text1-p">
+                      <p>帰国後の仕事獲得サポート付き</p>
+                    </div>
+                    <div class="sp-box-text1-span">
+                      <span>+</span>
+                    </div>
+                </div>
+                <div class="sp-box-text2">
+                   <p>
+                     経験年数の少ないフリーランスが高単価で継続的に仕事受注するコツ、それがチームを組むことです。
+                   </p>
+                   <p>
+                     iSaraではフリーランスコミュニティを形成し、帰国後のエンジニアでも継続的に稼げる仕組みを提供します。もちろん、個人で十分に稼げるようになった場合はいつでも脱退できますし、制限などは何もありません。
+                   </p>
+                </div>
+             </div>
+          </div>     
+     </div>
+ </div>
+
+<div class="fourteen-isara">
+    <div class="fourteen-isara-container">
+         <div class="fourteen-isara-text">
+            <h2>なぜバンコクなのか？</h2>
+            <p class="kokomade">ここまで見ると、iSaraは日本でも実施可能に見えます。<br>
+            しかし、バンコクを選んだのには理由があります。</p>
+            <p>・プログラミングフリーランスの最先端</p>
+            <p>・水準は日本と同じなのに、生活費が安い（毎月８万円ほど）</p>
+            <p>・昼、夜共に遊びが充実（稼ぐモチベーションアップと息抜きにGOOD）</p>
+            <p>・日本人が住みやすい（食事が美味しい / 気候が良い / 親日である）</p>
+            <h3>環境が大切。さらにこの価格が実現できるのが、バンコクなのです。
+            </h3>
+         </div>
+    </div>
+</div>
+
+<div class="fifteen-isara">
+    <div class="fifteen-isara-container">
+         <div class="fifteen-isara-text">
+            <h2>iSara受講生への参加特典</h2>
+            <p><span>講座費用258,000円以上の金額が稼げるまでの「永久サポート延長</span>」を追加します。つまり、<span>実質０円</span>です。</p>
+         </div>
+         <!--ここからPC様-->
+         <div class="fifteen-isara-box">
+            <div class="fifteen-isara-text2">
+               <h2>iSaraは『実質０円』！更なる特典もあります。</h2>
+            </div>
+            <div class="fifteen-isara-marus">
+               <div class="fifteen-isara-maru maru1">
+                 <h3>特典１</h3>
+                  <p>講座費用258,000円以上の金額が稼げるまで、「永久サポート延長」。リスク０で参加できます。</p>
+                  
+               </div>
+               <div class="fifteen-isara-maru maru2">
+                  <h3>特典2</h3>
+                  <p>iSaraフリーランスコミュニティ参加権利。案件の紹介や、新施設OPENの際の優先利用権が受けられます。</p>
+               </div>
+               <div class="fifteen-isara-maru maru3">
+                  <h3>特典3</h3>
+                  <p>講座参加後のシェアハウス利用権利（ドンムアン空港至近のため、とても便利です）</p>
+                  
+               </div>
+              
+            </div> 
+         </div>
+         <!--ここからスマホｓｐ版-->
+          <div class="fifteen-isara-box-sp">
+            <div class="fifteen-isara-text2-sp">
+               <h2>iSaraは『実質０円』！<br>更なる特典もあります。</h2>
+            </div>
+            <div class="fifteen-isara-box2-sp">
+               <div class="fifteen-isara-box2-1-sp">
+                  <div class="tokutenn"><p>特典１</p></div>
+                  <div class="sannkahi"><p>参加費以上の金額が稼げるまで「永久サポート」参加費用は実質0円です。</p></div>
+               </div>
+               <div class="fifteen-isara-box2-1-sp">
+                  <div class="tokutenn"><p>特典2</p></div>
+                  <div class="sannkahi"><p>参加費以上の金額が稼げるまで「永久サポート」参加費用は実質0円です。</p></div>
+               </div>
+               <div class="fifteen-isara-box2-1-sp">
+                  <div class="tokutenn"><p>特典3</p></div>
+                  <div class="sannkahi"><p>参加費以上の金額が稼げるまで「永久サポート」参加費用は実質0円です。</p></div>
+               </div>
+            </div> 
+         </div>
+    </div>
+</div>
+
+<div class="sixteen-isara">
+    <div class="sixteen-isara-container">
+         <div class="sixteen-isara-text">
+            <h2>iSaraはボランティアではありません</h2>
+            <p>ここまでみると、実質０円で各種サポートもある、特典が多すぎて逆に怪しい。<br>そう思われるかもしれません。<br>しかし、iSaraが目指すことは異なります。</p>
+         </div>
+          <!--before-->
+         <div class="sixteen-isara-text2">
+             <h2>月１０万円稼げるエンジニアを輩出し続ける。</h2>
+           <!--aftter-->
+         </div>
+         <div class="sixteen-isara-text3">
+            <p>最大の価値がこれです。</p>
+            <p>iSaraの卒業生が稼ぎ続けることで、小さな経済が動き始めます。<br>ここに最大の価値があり、この講座はその序章にすぎません。</p>
+         </div>
+    </div>
+</div>
+
+<div class="seventeen-isara">
+    <div class="seventeen-isara-container">
+         <div class="seventeen-isara-text">
+            <h2>創業者からのメッセージ</h2>
+            <p>「一生もののスキル」を身につけ、ノマドライフを楽しもう！</p>
+         </div>
+         <div class="seventeen-isara-box">
+            <div class="seventeen-isara-box-img">
+              <img src="https://keisukelife.com/wp-content/uploads/2017/09/IMG_1139-768x576.jpg" alt="1"> 
+            </div>
+            <div class="seventeen-isara-box-text2">
+              <p class="hazimemasite">初めまして。「iSara（イサラ）」創業者の染谷佳佑と申します。</p>
+              <p class="isaranokaisai">iSaraの開講は、僕達講師陣にとってもとても大きな挑戦です。今回、参加者に圧倒的な価値提供をするために、超少人数制だからできる内容を用意しました。</p>
+              <p>・「Webエンジニアとして稼ぐ」に特化した超実践的カリキュラム</p>
+              <p>・フリーランスとして生計を立て、いつでも世界中を旅できるスキル、収入のある講師陣のみを厳選</p>
+              <p class="kouza">・講座参加者が25万8,000円の参加費以上を稼ぐまでの無期限サポート延長</p>
+              <p>ここまでのカリキュラムを備えた講座は、世界で唯一iSaraだけでしょう。 iSaraでプログラミングや営業を学ぶことで、「一生ものの潰しが効くスキル」が身につきます。 もちろん勉強だけでなく、バンコクを楽しめるプログラムも用意しています！</p>
+              <p>３ヶ月間徹底的にサポートします。ぜひバンコクでお会いしましょう。</p>
+            </div>
+           
+         </div>
+    </div>
+</div>
+
+<div class="eighteen-isara" id="form-header">
+    <div class="eighteen-isara-container">
+         <div class="eighteen-isara-text">
+            <h2>資料請求フォーム</h2>
+            <p>まずは無料で資料請求からどうぞ。</p>
+         </div>
+         <form method="post" action="sent.php">
+            <input type="text" name="seimei" placeholder="性">
+            <br>
+             <input type="text" name="seimei" placeholder="名">
+            <br>
+             <input type="text" name="seimei" placeholder="メールアドレス">
+            <br>
+            <br>
+            <textarea name="note" placeholder="質問などはこちら（空欄でもokです）"></textarea>
+        </form>
+        <div class="eighteen-isara-text2">
+           <p>送信</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="nineteen-isara">
+    <div class="nineteen-isara-container">
+         <div class="nineteen-isara-text">
+           <p><i class="far fa-envelope-open"></i>よくある質問</p>
+         </div>
+         <div class="nineteen-isara-boxs">  
+           <div class="boxbox">  
+            <div class="nineteen-isara-box">
+               <div class="nineteen-isara-box-text">
+                  <p><i class="far fa-question-circle mycolor19"></i>プログラミングスキルは必要ですか？</p>
+               </div>
+               <div class="nineteen-isara-box-span">
+                 <span>+</span>
+               </div>
+            </div>
+            <div class="nineteen-isara-box-text2">
+                 <p>いいえ、必要ありません。しかし、iSaraでは参加費以上の金額が稼げることを保障しています。 従って、事前通話面談時点で簡単なテストを実施し、場合によってはお断りをしております。この点だけはご了承ください。</p>
+            </div>
+          </div>
+
+          <div class="boxbox">  
+            <div class="nineteen-isara-box">
+               <div class="nineteen-isara-box-text">
+                  <p><i class="far fa-question-circle mycolor19"></i>参加費以上に稼げなかったらどうなりますか？</p>
+               </div>
+               <div class="nineteen-isara-box-span">
+                 <span>+</span>
+               </div>
+            </div>
+            <div class="nineteen-isara-box-text2">
+                 <p>参加費である258,000円以上の金額をトータルで稼ぐまで、無期限でサポート延長いたします。（講座参加後、週30時間以上の実践をすることと、週１回の実践報告をすることが延長条件です。）きちんと学び実践すれば、フリーランスでも収入を作ることは十分に可能です。</p>
+            </div>
+          </div>
+
+          <div class="boxbox">  
+            <div class="nineteen-isara-box">
+               <div class="nineteen-isara-box-text">
+                  <p><i class="far fa-question-circle mycolor19"></i>滞在中の宿泊先はどうなりますか？</p>
+               </div>
+               <div class="nineteen-isara-box-span">
+                 <span>+</span>
+               </div>
+            </div>
+            <div class="nineteen-isara-box-text2">
+                 <p>宿泊費用が必要ですが、iSara提携のホステルに宿泊することになりますので心配はありません。</p>
+            </div>
+          </div>
+
+          <div class="boxbox">  
+            <div class="nineteen-isara-box">
+               <div class="nineteen-isara-box-text">
+                  <p><i class="far fa-question-circle mycolor19"></i>滞在中の食事はどうなりますか？</p>
+               </div>
+               <div class="nineteen-isara-box-span">
+                 <span>+</span>
+               </div>
+            </div>
+            <div class="nineteen-isara-box-text2">
+                 <p>拠点となる新築シェアハウスの周辺に、50バーツ程度の（160円）安価な飲食店が多数あります。 日本食レストランもありますし、出前を取ることも可能です。</p>
+            </div>
+          </div>
+
+          <div class="boxbox">  
+            <div class="nineteen-isara-box">
+               <div class="nineteen-isara-box-text">
+                  <p><i class="far fa-question-circle mycolor19"></i>追加でかかる費用はありますか？</p>
+               </div>
+               <div class="nineteen-isara-box-span">
+                 <span>+</span>
+               </div>
+            </div>
+            <div class="nineteen-isara-box-text2">
+                 <p>宿泊費（トータル20000円）と食費（一食150円程度）くらいです。</p>
+            </div>
+          </div>
+
+          <div class="boxbox">  
+            <div class="nineteen-isara-box">
+               <div class="nineteen-isara-box-text">
+                  <p><i class="far fa-question-circle mycolor19"></i>就職、転職はできますか？</p>
+               </div>
+               <div class="nineteen-isara-box-span">
+                 <span>+</span>
+               </div>
+            </div>
+            <div class="nineteen-isara-box-text2">
+                 <p>DODAの調査によると、2017年のエンジニアの求人倍率は7.5倍です。これは、人材不足が叫ばれる医療業界（医師：6倍、看護師：3倍）よりも高い数値です。ですのできちんとしたスキルを身につけることができれば、就職・転職には困らないはずです。元リクルートの転職のプロも運営スタッフとして参加しています。</p>
+            </div>
+          </div>
+
+          <div class="boxbox">  
+            <div class="nineteen-isara-box">
+               <div class="nineteen-isara-box-text">
+                  <p><i class="far fa-question-circle mycolor19"></i>フリーランスにならなければならないのですか？</p>
+               </div>
+               <div class="nineteen-isara-box-span">
+                 <span>+</span>
+               </div>
+            </div>
+            <div class="nineteen-isara-box-text2">
+                 <p>いいえ、必ずフリーランスにならないといけないわけではありません。 実際に過去の卒業生の方の進路も、独立、副業として続ける、就職するなど様々です。</p>
+            </div>
+          </div>
+
+          <div class="boxbox">  
+            <div class="nineteen-isara-box">
+               <div class="nineteen-isara-box-text">
+                 <p><i class="far fa-question-circle mycolor19"></i>ノマドワーカー的に世界を旅しながら働きたいです。可能ですか？</p>
+               </div>
+               <div class="nineteen-isara-box-span">
+                 <span>+</span>
+               </div>
+            </div>
+            <div class="nineteen-isara-box-text2">
+                 <p>きちんと努力し、スキルを身に着けることができれば可能です。 iSaraは、「好きなときに働き、好きなときに遊ぶ」という人生を送れる人を増やすために開講しました。 ちなみに、講師は全員ノマドワーカーとして、働きながら自由に世界中を旅しています。</p>
+            </div>
+          </div>
+
+          <div class="boxbox">  
+            <div class="nineteen-isara-box">
+               <div class="nineteen-isara-box-text">
+                  <p><i class="far fa-question-circle mycolor19"></i>学ぶプログラミング言語はなんですか？</p>
+               </div>
+               <div class="nineteen-isara-box-span">
+                 <span>+</span>
+               </div>
+            </div>
+            <div class="nineteen-isara-box-text2">
+                 <p>HTML / CSS / PHPを学びます。どの言語も需要が高いです。</p>
+            </div>
+          </div>
+
+          <div class="boxbox">  
+            <div class="nineteen-isara-box">
+               <div class="nineteen-isara-box-text">
+                  <p><i class="far fa-question-circle mycolor19"></i>将来的にwebサービス、アプリ、メディアを作りたいです。</p>
+               </div>
+               <div class="nineteen-isara-box-span">
+                 <span>+</span>
+               </div>
+            </div>
+            <div class="nineteen-isara-box-text2">
+                 <p>経験してる講師がいますよ。大丈夫です。</p>
+            </div>
+          </div>
+
+          <div class="boxbox">  
+            <div class="nineteen-isara-box">
+               <div class="nineteen-isara-box-text">
+                  <p><i class="far fa-question-circle mycolor19"></i>次回開催の予定はありますか？</p>
+               </div>
+               <div class="nineteen-isara-box-span">
+                 <span>+</span>
+               </div>
+            </div>
+            <div class="nineteen-isara-box-text2">
+                 <p>未定です。まずはお問合せください。</p>
+            </div>
+          </div>
+
+          <div class="boxbox">  
+            <div class="nineteen-isara-box">
+               <div class="nineteen-isara-box-text">
+                  <p><i class="far fa-question-circle mycolor19"></i>海外に出るのが初めてで不安です。</p>
+               </div>
+               <div class="nineteen-isara-box-span">
+                 <span>+</span>
+               </div>
+            </div>
+            <div class="nineteen-isara-box-text2">
+                 <p>講師陣が現地での生活をサポートしますので安心してください。ただしパスポート取得は必要です。</p>
+            </div>
+          </div>
+
+          <div class="boxbox">  
+            <div class="nineteen-isara-box">
+               <div class="nineteen-isara-box-text">
+                  <p><i class="far fa-question-circle mycolor19"></i>タイ語、英語が一切話せません。参加可能でしょうか。</p>
+               </div>
+               <div class="nineteen-isara-box-span">
+                 <span>+</span>
+               </div>
+            </div>
+            <div class="nineteen-isara-box-text2">
+                 <p>タイ語スタッフ、英語スタッフがいるのでOKです。日本人、タイ人スタッフがおりますので、期間中のトラブル対応の心配は必要ありません。</p>
+            </div>
+          </div>
+
+          <div class="boxbox">  
+            <div class="nineteen-isara-box">
+               <div class="nineteen-isara-box-text">
+                  <p><i class="far fa-question-circle mycolor19"></i>治安はどうですか？</p>
+               </div>
+               <div class="nineteen-isara-box-span">
+                 <span>+</span>
+               </div>
+            </div>
+            <div class="nineteen-isara-box-text2">
+                 <p>バンコクは、東南アジアや南アジアの他の国の都市部と比べると、街中も整備されており、非常に治安の良い街です。日本ほどではないですが、世界でも非常に治安の良い国として知られています。</p>
+            </div>
+          </div>
+
+          <div class="boxbox">  
+            <div class="nineteen-isara-box">
+               <div class="nineteen-isara-box-text">
+                  <p><i class="far fa-question-circle mycolor19"></i>パソコンは必要ですか？</p>
+               </div>
+               <div class="nineteen-isara-box-span">
+                 <span>+</span>
+               </div>
+            </div>
+            <div class="nineteen-isara-box-text2">
+                 <p> はい。ノートPCのご用意が必要です。      </p>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="twenty-isara">
+    <div class="twenty-isara-container">
+         <div class="twenty-isara-text">
+            <p>バンコクのノマドエンジニア育成講座、iSara[イサラ]<br>Copyright ©︎ iSara All Rights Reserved.
+            </p>
+         </div>
+          <div class="profiles">
+              <div class="twitter logo3"><i class="fab fa-twitter  my-color"></i>
+                ツイート
+              </div>
+              <div class="iine logo3"><i class="far fa-thumbs-up"></i>
+                いいね
+              </div>
+              <div class="shea logo3">
+                シェア
+              </div>           
+          </div>
+    </div>
+</div>
+
+<!--最後に右下の□部分を作っていきます-->
+
+<div id="page-top" class="page-top">
+  <p><a class="move-page-top"><i class="fa fa-chevron-up fa-2x my"></i></a></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="isara2.js"></script>
 </body>
 </html>
+
+
 

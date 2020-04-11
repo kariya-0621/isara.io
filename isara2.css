@@ -1,0 +1,1248 @@
+* {
+	/*はじめにある全体の余白を無くし以後、余白を含める*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+	/*全体の基本的な文字色の指定と大きさ*/
+    color: #333333;
+    font-size: 14px;
+    line-height: 1.6;
+    font-family: "�q���M�m�p�S Pro W3", "Hiragino Kaku Gothic Pro", "���C���I", Meiryo, Osaka, "�l�r �o�S�V�b�N", "MS PGothic", sans-serif;
+}
+img {
+	/*全ての画像はどの画面幅においても
+	100%より大きくならない*/
+	max-width: 100%;
+}
+p {
+    margin: 0;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+header {
+    position: fixed;
+    z-index: 10;
+    background-color: #fff;
+    width: 100%;
+}
+
+.title {	
+	/*このtitleの横幅は、絶対に下のコードより
+	大きくならない*/
+	max-width: calc(100% - 20px);
+	width: 1170px;
+	margin: 0 auto;
+	/*この大枠の全体高さを記述
+	高さはあんまレスポンシブ考えなくてもいいかも*/
+	height: 75px;
+	/*ここを基準点にする親要素*/
+	position: relative;
+	padding: 20px;
+}
+
+/*横並びにしたい子要素全てにinline-blockを行い
+親要素の幅を指定することで横並び可能*/
+ .logo, .subtitle {
+    display: inline-block;
+}
+.logo {
+    margin-top: -6px;
+
+}
+
+.logo img {
+	/*普通に画像幅の指定していい制限はもう上のコードで書いた*/
+    width: 128px;
+    /*画像が持つ下の余白を無くしてくれる*/
+    vertical-align: bottom;
+}
+
+.contactpc {
+	/*ヘッダー右の配置も絶対配置に！画面幅が小さくなったら
+	消します*/
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    top: 16px;
+    color: #fff;
+    padding: 11px 40px;
+    background-color: #da6b64;
+    border-radius: 25px;
+}
+.contactpc:hover {
+	background: rgb(216,73,64);
+}
+.contactsp {
+	display: none;
+}
+
+ 
+/*1枚目のcssにはいります*/
+.isara-cover-image {
+	background-image: url('https://isara.life/wp-content/themes/isara_v2/img/main.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    background-position: center;   
+}
+.isara-top-text img {
+	width: 300px;
+
+}
+.isara-top-text {
+	text-align: center;
+	padding-top: 90px;
+	letter-spacing: 3px;
+	line-height: 60px;
+}
+.isara-top-text h2 {
+	line-height: initial;
+}
+
+/*2枚目にはいります*/
+.isara-second-contants {
+
+	background: rgb(235,185,77);
+	height: 650px;
+	padding-top: 40px;
+	text-align: center;
+	width: 100%;
+}
+.mazuha {
+	color: white;
+	font-size: 22px;
+	letter-spacing: 3px;
+	padding-bottom: 15px;
+}
+.white-text {
+	width: 540px;
+	margin: 0 auto;
+	background: white;
+	border-radius: 5px;
+	color: rgb(199,37,78);
+	font-size: 15px;
+	letter-spacing: 3px;
+	margin-bottom: 50px;
+}
+.otoiawase {
+	/*この下２つ組み合わせ強い*/
+	width: 1050px;
+	max-width: 100%;
+	margin: 0 auto;
+	border-radius: 60px;
+	background: #da6b64;
+	color: white;
+	padding: 30px;
+	margin-bottom: 70px;
+}
+.otoiawase:hover {
+	background: rgb(216,73,64);
+}
+.otoiawasebi {
+	color: white;
+}
+.otoiawasebi h2 {
+	margin: 35px 0;
+} 
+
+.zikoshoukai {
+	width: 240px;
+	margin: 0 auto;
+	color: white;
+	display: inline-block;
+}
+.logo2 {
+	display: inline-block;
+	border-radius: 3px;
+	padding: 1px;
+}
+
+.twitter {
+	background: rgb(27,149,224);
+}
+.iine , .shea {
+	background: rgb(24,119,242);
+}
+
+
+/*3枚目のcssにはいります*/
+.isara-cover-image-three {
+	background-image: url('https://isara.life/wp-content/themes/isara_v2/img/introbottom.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 590px;
+    background-position: center;  
+    text-align: center; 
+}
+.isara-three-text {
+	margin-top: 50px;
+	
+}
+
+
+.isara-three-text1 {
+	width: 870px;
+	margin: 0 auto;
+	max-width: 100%;
+	font-size: 14px;
+	/*ここにposition:relativeを置くことにより黄色
+	のブロックを相対的に位置決めできる,基本親要素に指定*/
+	position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+
+}
+.isara-three-text1::before {
+	/*beforeを使う時には、必ずcontent: "";
+	がいる。親要素がレスポンシブ対応になっているので
+	レイアウトは崩れない*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "";
+	width: 50px;
+    height: 50px;
+	border-top: solid 4px rgb(235,185,77);
+	border-left: solid 4px rgb(235,185,77);
+}
+
+.isara-three-text1::after {
+	position: absolute;
+	bottom: 0;
+    right: 0;
+	content: "";
+	width: 50px;
+    height: 50px;
+	border-bottom: solid 4px rgb(235,185,77);
+	border-right: solid 4px rgb(235,185,77);
+}
+.isara-three-text2 {
+	color: gray;
+}
+.isara-three-text2 h2 {
+	margin: 30px 0;
+}
+.isara-three-text2 span {
+	border-bottom: solid 10px rgb(235,185,77);
+	color: black;
+}
+
+/*4枚目のcssにはいります*/
+.isara-cover-image-fore {
+	background: rgb(254,245,224);
+	height: 650px;
+	text-align: center;
+	width: 100%;	
+}
+.about {
+    position: relative;
+    top: -40px;
+}
+.circle1 {
+    color: #fff;
+    background-color: #ebb94d;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.isara-fore-text1 {
+	position: relative;
+	width: 860px;
+	margin: 0 auto;
+	max-width: 100%;
+	font-size: 14px;
+	padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+
+}
+
+.isara-fore-text1::before {
+	/*beforeを使う時には、必ずcontent: "";
+	がいる。親要素がレスポンシブ対応になっているので
+	レイアウトは崩れない*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "";
+	width: 50px;
+    height: 50px;
+	border-top: solid 4px rgb(235,185,77);
+	border-left: solid 4px rgb(235,185,77);
+}
+
+.isara-fore-text1::after {
+	position: absolute;
+	bottom: 0;
+    right: 0;
+	content: "";
+	width: 50px;
+    height: 50px;
+	border-bottom: solid 4px rgb(235,185,77);
+	border-right: solid 4px rgb(235,185,77);
+}
+
+.isara-fore-text2 {
+	width: 1175px;
+	height: 252px;
+	margin: 0 auto; 
+	max-width: 100%;
+	border: solid 2px rgb(235,185,77);
+	border-radius: 5px;
+	background: white;
+	margin-top: 30px;
+
+}
+.kasegeru {
+	padding-top: 25px;
+}
+.logo4 {
+	display: inline-block;
+	padding-top: 15px;
+}
+
+
+/*5枚目のスライドに移ります*/
+.isara-five-contants {
+	background-image: url('https://isara.life/wp-content/themes/isara_v2/img/aboutsecondbg.jpg');
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 50px;
+    background-position: center;   
+    color: white;
+    text-align: center;
+}
+.isara-five-text1 {
+	padding-top: 60px;
+	letter-spacing: 2px;
+}
+.isara-five-text1 h2 {
+	padding-top: 15px;
+}
+.isara-five-text1 span {
+   color: rgb(235,185,77);
+}
+
+.isara-five-box {
+	width: 1175px;
+	max-width: 100%;
+	margin: 0 auto;
+	display: flex;
+	padding-top: 30px;
+	color: black;
+
+}
+
+.box1, .box2, .box3 {
+	background: white;
+	width: 377px;
+	max-width: 100%;
+	padding-bottom: 30px;
+	margin-right: 20px;
+	border-radius: 4px;
+}
+.box-1-text {
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 30px;
+	border-radius: 4px;
+	background: rgb(235,185,77);
+	color: white;
+}
+.bannkoku {
+	padding-top: 27px;
+}
+.bannkoku p {
+	padding: 5px 0;
+}
+.ao {
+  background: rgb(1,110,169);
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+.ao span {
+	color: rgb(235,185,77);
+}
+
+
+/*６枚目にはいります*/
+.isara-six-contants {
+	background: white;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 50px;
+}
+.isara-six-text {
+	color: rgb(51,51,51);
+	margin-top: 35px;
+	margin-bottom: 30px;
+	font-size: 14px;
+}
+.isara-six-text2 {
+  letter-spacing: 3px;
+  font-size: 15px;
+  color: rgb(51,51,51);
+}
+
+.row {
+	display: flex;
+	text-align: center;
+	width: 880px;
+	margin: 0 auto;
+	max-width: 100%;
+	padding-left: 30px;
+	padding-top: 50px;
+
+}
+.row img {
+	width: 200px;
+	padding-right: 30px;
+}
+.korera {
+	padding-top: 20px;
+} 
+
+/*7枚目に入ります*/
+.isara-cover-image-seven {
+	background: rgb(254,245,224);
+	width: 100%;
+	padding-top: 40px;
+	padding-bottom: 60px;	
+}
+.isara-seven-text1 {
+	position: relative;
+	width: 860px;
+	margin: 0 auto;
+	text-align: center;
+	max-width: 100%;
+	font-size: 10px;
+	padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+.isara-seven-text1::before {
+	/*beforeを使う時には、必ずcontent: "";
+	がいる。親要素がレスポンシブ対応になっているので
+	レイアウトは崩れない*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "";
+	width: 50px;
+    height: 50px;
+	border-top: solid 4px rgb(235,185,77);
+	border-left: solid 4px rgb(235,185,77);
+}
+
+.isara-seven-text1::after {
+	position: absolute;
+	bottom: 0;
+    right: 0;
+	content: "";
+	width: 50px;
+    height: 50px;
+	border-bottom: solid 4px rgb(235,185,77);
+	border-right: solid 4px rgb(235,185,77);
+}
+.meritto {
+	font-size: 26px;
+}
+
+.meritto-picutures {
+	display: flex;
+	width: 1170px;
+	max-width: 100%;
+	margin: 0 auto;
+	border: solid 1px black;
+	padding-left: 30px;
+	margin-bottom: 60px;
+}
+
+.box-seven {
+	width: 380px;
+	padding-right: 20px;
+	color: rgb(235,185,77);
+	border: solid 1px black;
+	letter-spacing: 2px;
+}
+.box-seven p {
+	color: black;
+}
+
+.meritto-picutures img {
+	width: 380px;
+}
+/*7枚面の白いボックスの中*/
+
+.isara-seven-text2 {
+	width: 1170px;
+	max-width: 100%;
+	height: 267px;
+	margin: 0 auto;
+	border: solid 1px rgb(235,185,77);
+	background: white;
+	border-radius: 3px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.isara-seven-text2-container {
+	padding-top: 0px;
+	padding-bottom: 20px;
+
+}
+
+.sarani {
+	color: rgb(235,185,77);
+	padding-bottom: 20px;
+
+}
+
+.isaraha {
+	width: 752px;
+	max-width: 100%;
+	margin: 0 auto;
+	padding-top: 20px;
+} 
+.zizenn {
+	width: 1050px;
+	margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+}
+
+/*8枚目のスライドに入ります！*/
+
+.isara-cover-image-eight {
+	background-image: url("https://isara.life/wp-content/themes/isara_v2/img/teacherbg.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 1340px;
+	width: 100%;
+	color: white;
+	text-align: center;
+	padding-top: 70px;
+
+}
+.isara-cover-image-eight img {
+	border-radius: 50%;
+}
+.isara-eight-text1 h1 {
+	padding-bottom: 35px;
+}
+.isara-eight-text1 p {
+   font-size: 18px;
+}
+
+
+.eight-box,.eight-box2 {
+	padding: 50px 0;
+	display: flex;
+	margin: 0 auto;
+	width: 850px;
+	max-width: 100%;
+    margin-top: 100px;
+}
+
+.box8-1, .box8-2, .box8-3, .box8-4 {
+	border: solid 3px white;
+	width: 380px;	
+	margin: 0 auto;
+	max-width: 100%;
+	position: relative;
+
+}
+.box8-1 img,.box8-3 img  {
+	position: absolute;
+	top: -120px;
+	right: 80px;
+}
+.eight-text1, .eight-text2, .eight-text3,.eight-text4  {
+	width: 292px;
+	padding-bottom: 40px;
+	margin: 0 auto;
+	margin-top: 100px;
+	letter-spacing: 2px;
+	font-size: 15px;
+	
+}
+
+.box8-2 img, .box8-4 img{
+	position: absolute;
+	top: -120px;
+	left: 80px;
+}
+
+
+
+
+
+
+/*9枚目の巣態度に移っていきます*/
+.isara-nine {
+	background: rgb(235,185,77);
+	text-align: center;
+	width: 100%;
+	color: white;
+}
+.isara-nine-container {
+	width: 1024px;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+.isara-nine-maru {
+	background: white;
+	border-radius: 50%;
+	width: 90px;
+	height: 90px;
+	margin: 0 auto;
+}
+.QA {
+	padding-top: 30px;
+	color: rgb(235,185,77);
+	font-size: 17px;
+}
+
+.isara-nine-text1 {
+	width: 870px;
+	margin: 0 auto;
+	max-width: 100%;
+	font-size: 14px;
+	/*ここにposition:relativeを置くことにより黄色
+	のブロックを相対的に位置決めできる,基本親要素に指定*/
+	position: relative;
+    padding:  30px 0;
+
+}
+.isara-nine-text1::before {
+	/*beforeを使う時には、必ずcontent: "";
+	がいる。親要素がレスポンシブ対応になっているので
+	レイアウトは崩れない*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "";
+	width: 50px;
+    height: 50px;
+	border-top: solid 4px white;
+	border-left: solid 4px white;
+}
+
+.isara-nine-text1::after {
+	position: absolute;
+	bottom: 0;
+    right: 0;
+	content: "";
+	width: 50px;
+    height: 50px;
+	border-bottom: solid 4px white;
+	border-right: solid 4px white;
+}
+
+
+/*10枚目のスライドに入ります。*/
+.ten-isara {
+	background: white;
+	width: 100%;
+	text-align: center;
+}
+.ten-isara-container {
+	width: 860px;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 50px 40px;
+	border: solid 2px black;
+}
+.ten-isara-text1 {
+	border: solid 2px black;
+}
+.ten-isara-text1 h1 {
+	padding-bottom: 15px;
+}
+
+.ten-isara-text1 h4 {
+	padding-bottom: 25px;
+}
+
+
+
+.ten-isara-boxs {
+	border: solid 2px yellow;
+	padding: 50px 0;
+}
+.ten-isara-box {
+	width: 840px;
+	max-width: 100%;
+	margin: 0 auto;
+	display: flex;
+    margin-bottom: 40px;
+}
+
+.ten-isara-box-img {
+	width: 245px;
+	height: 245px;
+	border: solid 2px rgb(235,185,77);
+	
+}
+
+.ten-isara-box-text {
+	width: 550px;
+	text-align: left;
+	color: rgb(119,119,119);
+	font-size: 17px;
+	padding: 15px 30px;
+}
+.IT {
+	border-bottom: solid 1px  rgb(119,119,119);
+}
+/*11枚目のスライド*/
+
+.eleven-isara {
+	background-image: url('https://isara.life/wp-content/themes/isara_v2/img/classbg.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+.eleven-isara-container {
+	width: 860px;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 50px 40px;
+	border: solid 2px black;
+}
+.eleven-isara-text1 {
+	padding-bottom: 40px;
+}
+.eleven-isara-boxs {
+	display: flex;
+
+}
+.tokoumae {
+	background: rgb(1,110,169);
+	padding: 10px;
+}
+
+.eleven-isara-box {
+	width: 360px;
+	margin: 0 auto;
+	border: solid 1px rgb(1,110,169);
+	border-radius: 4px;
+}
+.eleven-isara-box2 {
+	width: 360px;
+	margin: 0 auto;
+	border-radius: 4px;
+}
+.eleven-isara-text3 {
+	border: solid 1px rgb(1,110,169);
+}
+
+.eleven-isara-text2 p {
+	color: black;
+	background: white;
+	font-weight: 800;
+	border-bottom: dotted 1px rgb(229,229,229);
+	padding: 15px 0;
+}
+.eleven-isara-text3 p {
+	color: black;
+	background: white;
+	font-weight: 800;
+	border-bottom: dotted 1px rgb(229,229,229);
+	padding: 15px 0;
+}
+/*12枚目のスライドに移ります*/
+.isara-twelve {
+	background: rgb(1,110,169);
+	width: 100%;
+	text-align: center;
+	color: white;
+	padding: 25px 0;
+	font-size: 24px;
+}
+
+/*13枚目のスライド*/
+.thirteen-isara {
+	background: white;
+	width: 100%;
+	color: black;
+}
+.thirteen-isara-container {
+	width: 1200px;
+	max-width: 100%;
+	margin: 0 auto;
+    text-align: center;
+	padding: 30px 20px;
+	border: solid 2px black;
+}
+.thirteen-isara-text {
+	padding-bottom: 30px;
+}
+.thirteen-isara-text h1 {
+	margin-bottom: 40px;
+}
+
+.pc-box {
+	width: 1160px;
+	max-width: 100%;
+	margin: 0 auto;
+	background: rgb(254,245,224);
+	border-radius: 10px;
+	padding: 20px 0;
+	margin-bottom: 60px;
+}
+.pc-box {
+	display: flex;
+}
+.pc-box-left {
+　　width: 320px;
+    margin-left: 80px;
+    border: solid 2px black;
+}
+.pc-box-right {
+	width: 840px;
+	max-width: 100%;
+	margin-left: 50px;
+	margin-right: 0px;
+	border: solid 2px black;
+	text-align: left;
+	letter-spacing: 2px;
+}
+.pc-box-right h3 {
+	margin-bottom: 20px;
+
+}
+/*スマホ画面の時だけ、表示させる*/
+.sp-boxs {
+	display: none;
+}
+
+
+/*14枚目のスライド*/
+.fourteen-isara {
+	background: url('https://isara.life/wp-content/themes/isara_v2/img/bangkokbg.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    color: white;
+
+}
+.fourteen-isara-container {
+	width: 1000px;
+	max-width: 100%;
+	margin: 0 auto;
+	text-align: left;
+	border: solid 2px black;
+	padding: 40px 50px;
+}
+.fourteen-isara-text {
+	border: solid 2px black;
+	margin-top: 30px;
+}
+.fourteen-isara-text h2 {
+	padding-bottom: 20px;
+}
+.fourteen-isara-text p {
+	padding-bottom: 15px;
+}
+
+
+/*１５枚目のスライド*/
+.fifteen-isara {
+	background: rgb(247,194,60);
+    width: 100%;
+    color: black;
+}
+.fifteen-isara-container {
+	width: 1200px;
+	max-width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	border: solid 2px black;
+	padding: 50px;
+}
+.fifteen-isara-text {
+	width: 880px;
+	max-width: 100%;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	border: solid 2px black;
+}
+.fifteen-isara-text h2 {
+	margin-bottom: 20px;
+}
+.fifteen-isara-text span {
+	color: white;
+}
+
+
+.fifteen-isara-box {
+	width: 1050px;
+	max-width: 100%;
+	padding: 35px 0px;
+	margin: 0 auto;
+	border: solid 2px white;
+}
+.fifteen-isara-text2 {
+	border: solid 2px black;
+	font-size: 16px;
+	width: 65%;
+	margin: 0 auto;
+	position: relative;
+	bottom: 50px;
+	background: rgb(247,194,60);
+}
+.fifteen-isara-marus {
+	display: flex;
+	border: solid 2px black;
+	margin: 10px;
+}
+.fifteen-isara-maru {
+	width: 225px;
+	height: 225px;
+	background: white;
+	border-radius: 50%;
+	margin: 0 auto;
+	border: solid 2px black;
+	font-size:13px;
+}
+.fifteen-isara-maru h3 {
+	font-size: 20px;
+	color: rgb(235,185,77);
+	padding-top: 40px;
+	padding-bottom: 15px;
+}
+.fifteen-isara-maru p {
+	padding: 0 15px;
+	font-weight: 600;
+}
+
+/*spの表示を消しておきます*/
+.fifteen-isara-box-sp {
+	display: none;
+}
+
+
+/*16枚目のスライド*/
+.sixteen-isara {
+	background-image: url('https://isara.life/wp-content/themes/isara_v2/img/specialdetail.jpg');
+	background-size: cover;
+	width: 100%;
+	text-align: center;
+}
+.sixteen-isara-container {
+	width: 1170px;
+	margin: 0 auto;
+	max-width: 100%;
+	padding: 70px 50px;
+	border: solid 2px pink;
+}
+.sixteen-isara-text {
+	width: 760px;
+	margin: 0 auto;
+	max-width: 100%;
+	font-size: 17px;
+	font-weight: 700;
+	padding-bottom: 30px;
+}
+.sixteen-isara-text h2 {
+	padding-bottom: 15px;
+}
+.sixteen-isara-text2 {
+	width: 760px;
+	max-width: 100%;
+	margin: 0 auto;
+	font-size: 17px;
+	position: relative;
+	border: solid 2px black;
+}
+
+.sixteen-isara-text2::before {
+  position: absolute;
+	top: 0;
+	left: 0;
+	content: "";
+	width: 40px;
+    height: 40px;
+	border-top: solid 4px white;
+	border-left: solid 4px white;
+}
+.sixteen-isara-text2::after {
+	position: absolute;
+	bottom: 0;
+    right: 0;
+	content: "";
+	width: 40px;
+    height: 40px;
+	border-bottom: solid 4px white;
+	border-right: solid 4px white;
+	
+}
+.sixteen-isara-text2 h2 {
+	padding: 20px 0;
+
+}
+
+.sixteen-isara-text3 {
+   font-weight: 700;
+   font-size: 17px;
+}
+
+/*17枚目*/
+.seventeen-isara {
+	background: white;
+	width: 100%;
+	text-align: center;
+}
+.seventeen-isara-container {
+	width: 1170px;
+	margin: 0 auto;
+	max-width: 100%;
+	padding: 50px 50px;
+	border: solid 2px pink;
+	color: black;
+}
+.seventeen-isara-text {
+	width: 620px;
+	margin: 0 auto;
+	max-width: 100%;
+	border: solid 2px pink;
+	font-weight: 700;
+	font-size: 18px;
+	padding-bottom: 30px;
+}
+.seventeen-isara-text h2 {
+	padding-bottom: 30px;
+}
+
+.seventeen-isara-box {
+	width: 920px;
+	max-width:  100%;
+	margin: 0 auto;
+	display: flex;
+	padding-left: 30px;
+}
+.seventeen-isara-box-img {
+	width: 180px;
+}
+.seventeen-isara-box-text2 {
+	width: 630px;
+	max-width: 100%;
+	font-weight: 200;
+	text-align: left;
+    padding-left: 30px;
+}
+.hazimemasite {
+	padding-bottom: 10px;
+}
+.isaranokaisai {
+	padding-bottom: 20px;
+}
+.kouza {
+	padding-bottom: 20px;
+}
+
+/*18枚目のスライド*/
+
+.eighteen-isara {
+	background: rgb(235,185,77);
+	width: 100%;
+	text-align: center;
+}
+
+.eighteen-isara-container {
+	width: 1170px;
+	margin: 0 auto;
+	max-width: 100%;
+	padding: 50px 50px;
+	border: solid 2px white;
+	color: black;
+	font-size: 17px;
+}
+.eighteen-isara-text h2 {
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+.eighteen-isara-text p {
+	padding-bottom: 30px;
+}
+
+form  {
+	width: 100%;
+    text-align: center;
+}
+input {
+	width: 80%;
+    height: 55px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 25px;
+    border: none;
+}
+textarea {
+	width: 80%;
+    height: 100px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 25px;
+    border: none;
+}
+
+.eighteen-isara-text2 {
+	width: 850px;
+	max-width: 100%;
+	margin: 0 auto;
+	border-radius: 50px;
+	background: rgb(218,107,100);
+	padding: 10px;
+	color: white;
+	font-weight: 700;
+	letter-spacing: 5px;
+	font-size: 20px;
+}
+
+/*19枚目のスライド*/
+.nineteen-isara {
+	background: white;
+	width: 100%;
+}
+.nineteen-isara-container {
+	width: 1200px;
+	margin: 0 auto;
+	max-width: 100%;
+	padding: 50px 50px;
+	border: solid 2px pink;
+	color: black;
+}
+
+.nineteen-isara-text {
+	font-size: 26px;
+	font-weight: 700;
+	padding-bottom: 30px;
+	text-align: center;
+}
+.nineteen-isara-box {
+	width: 1000px;
+	max-width: 100%;
+	margin: 0 auto;
+	text-align: left;
+	padding: 15px;
+	border: solid 2px rgb(244,244,244);
+	position: relative;
+	cursor: pointer;
+}
+.nineteen-isara-box-text {
+	font-size: 17px;
+	font-weight: 700;
+}
+.nineteen-isara-box-span {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	font-size: 20px;
+}
+
+.nineteen-isara-box-text2 {
+	width: 960px;
+	max-width: 100%;
+	margin: 0 auto;
+	border-bottom: solid 1px  rgb(244,244,244);
+	padding:  30px 0;
+	font-weight: 600;
+	opacity: 0.8;
+	/*隠しておく*/
+	display: none;
+}
+.boxbox {
+	width: 1050px;
+	max-width:100%;
+	margin-bottom:  5px;
+}
+
+.mycolor19 {
+	color: rgb(164,203,224);
+}
+
+/*最後です。20枚目のスライド*/
+.twenty-isara {
+	background: rgb(236,236,236);
+	width: 100%;
+}
+.twenty-isara-container {
+	width: 1000px;
+	max-width: 100%;
+	padding: 50px 80px;
+	border: solid 1px black;
+	margin: 0 auto;
+}
+.twenty-isara-text {
+	width: 350px;
+	max-width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 12px;
+}
+
+
+
+.profiles {
+	color: white;
+	font-size: 12px;
+	width: 250px;
+	margin: 0 auto;
+	padding-left: 40px;
+	padding-top: 8px;
+}
+.logo3 {
+	display: inline-block;
+	border-radius: 5px;
+}
+
+.twitter {
+	background: rgb(27,149,224);
+}
+.iine , .shea {
+	background: rgb(24,119,242);
+}
+
+/*最後に右下の□を作る。*/
+.page-top {
+	margin: 0 ;
+	padding: 0 ;
+	display: none ;
+}
+.page-top p {
+	margin: 0 ;
+	padding: 0 ;
+	position: fixed ;
+	right: 50px ;
+	bottom: 80px ;
+}
+.move-page-top {
+	display: block ;
+	background-color: rgb(236,236,236) ;
+	width: 70px ;
+	height: 70px ;
+	color: rgb(51,51,51);
+	line-height: 50px ;
+	text-decoration: none ;
+	text-align: center ;
+	transition:all 0.3s ;
+}
+.my {
+	padding-top: 20px;
+}
